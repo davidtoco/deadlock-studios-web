@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DeadLock Studios</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.png' %>
+
+</head>
+<body>
+
+	<div id="topbar">
+		
+		</div>
+		<div class="div_right_twitter">
+			<a href= "https://twitter.com/DeadlockIndie">
+				<%= image_tag "twitter"%>
+			</a>
+		</div>
+		<div class="div_right_youtube">
+			<a href= "https://www.youtube.com/user/TocoDeply">
+				<%= image_tag "youtube"%>
+			</a>
+		</div>
+		<div class="div_right_gmail">
+			<a href="https://accounts.google.com/ServiceLogin?service=mail&continue=https://mail.google.com/mail/&hl=es#identifier">
+				<%= image_tag "googleplus" %>
+			</a>
+		</div>
+		<div style="height:38px">
+		</div>
+		<div class="div_left">
+			<a href="/">
+				<%= image_tag "logo.png"%>
+			</a>	
+	</div>
+	
+
+	<header>
+		<nav class ="be-grey borders gradient " >
+			<ul class="no-list row center-xs large-padding fontUl ">
+
+				<li class="col-md" >
+					<%= link_to "NOSOTROS", nosotros_path %>
+				</li>
+
+				<li class= "col-md">
+					 <%= link_to "EL EQUIPO", equipo_path%>
+				</li>
+
+				<li class= "col-md">
+					<%= link_to "VIDEOJUEGOS", videojuegos_path%>
+				</li>
+
+				<li class= "col-md">
+					<%= link_to "EN DESARROLLO", desarrollo_path%>
+				</li>
+
+				<li class= "col-md">
+					<%= link_to "FEEDBACK", articles_path%>
+				</li>
+
+				<li class= "col-md">
+					<%= link_to "CONTACTO", contacta_path%>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<%= yield %>
+
+</body>
+</html>

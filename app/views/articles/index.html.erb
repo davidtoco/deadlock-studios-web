@@ -1,0 +1,17 @@
+<h1> Dejadnos vuestra opinión </H1>
+	<p> En esta sección podréis ver los comentarios que nos hacéis y las respuestas que os damos. Cualquier cosa que nos querráis decir adelante con ello, creemos que este tablón es una manera más directa e informal de que os comuniequeis con nostors sin necesidad de tener que enviarnos un correo electrónico; asique empezar a bombardearnos.</p>
+	<p style="margin-bottom:30px"> Simplemente para enviarnos tu opinión tendrás que pinchar en el botón que verás a continuación y cubrir los campos que te piden.</p>
+<a href="articles/new">
+	<%=submit_tag 'CREAR ARTÍCULO', class:"btn"%>
+</a>
+<h3 style="margin-top:60px; letter-spacing:0.1em"> TABLÓN DE ARTÍCULOS </h3>
+<div id ="hueco">
+</div>
+<% @articles.each do |article| %>
+	<h2 style="color:#737373; margin-top:35px"> <%= article.title%> </h2>		
+	<div class= "textoArticulos">
+		<%= article.body %> 
+	</div>
+<%end%>
+<%= will_paginate @articles %>
+<%= render "partials/footer" %>
