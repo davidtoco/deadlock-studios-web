@@ -1,0 +1,29 @@
+{
+  "name": "Automated Surveys: Twilio",
+  "description": "An example of implementing automated voice surveys on Rails",
+  "keywords": [
+    "Ruby on Rails",
+    "Ruby",
+    "API",
+    "twilio",
+    "Rails",
+    "Tutorial",
+    "Telephone API",
+    "Voice API",
+    "Surveys",
+    "IVR",
+    "Automated Telephone",
+    "Automated Surveys",
+    "Demo"
+  ],
+  "scripts": {
+    "postdeploy": "rake db:migrate && rake questions:import"
+  },
+  "website": "https://twilio.com/docs/howto/automated-survey/ruby/rails",
+  "repository": "https://github.com/TwilioDevEd/survey-rails",
+  "logo": "https://s3-us-west-2.amazonaws.com/deved/twilio-logo.png",
+  "success_url": "/landing.html",
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
