@@ -11,7 +11,7 @@ development:
   database: db/development.sqlite3
 
 production:
- url: postgres://pqqtpvmwrnaivs:Jds52pPL4gm2IKcFJMpbyXERyB@ec2-54-83-202-64.compute-1.amazonaws.com:5432/de2sf3ksv430bm
+ url: postgres://qnipshnfeuzbxo:sxPQYuThxULSHyR_zjW4LfrF10@ec2-54-83-202-64.compute-1.amazonaws.com:5432/d8m87fv67cn1hi
  #adapter: postgresql
  #database: de2sf3ksv430bm
  #username: pqqtpvmwrnaivs
