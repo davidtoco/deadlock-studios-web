@@ -11,12 +11,13 @@ development:
   database: db/development.sqlite3
 
 production:
- adapter: postgresql
- database: de2sf3ksv430bm
- username: pqqtpvmwrnaivs
- password: Jds52pPL4gm2IKcFJMpbyXERyB
- host: ec2-54-83-202-64.compute-1.amazonaws.com
- port: 5432
+ url: postgres://pqqtpvmwrnaivs:Jds52pPL4gm2IKcFJMpbyXERyB@ec2-54-83-202-64.compute-1.amazonaws.com:5432/de2sf3ksv430bm
+ #adapter: postgresql
+ #database: de2sf3ksv430bm
+ #username: pqqtpvmwrnaivs
+ #password: Jds52pPL4gm2IKcFJMpbyXERyB
+ #host: ec2-54-83-202-64.compute-1.amazonaws.com
+ #port: 5432 
 
 
 

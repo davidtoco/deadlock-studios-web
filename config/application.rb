@@ -23,6 +23,6 @@ module Blog
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     config.logger = Logger.new(STDOUT)
-    config.logger.level = Logger.const_get((ENV["LOG_LEVEL"] || "INFO").upcase)
+    config.logger.level = Logger.const_get((ENV["LOG_LEVEL"] || "INFO").upcase) 
   end
 end
