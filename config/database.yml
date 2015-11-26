@@ -12,7 +12,6 @@ development:
 
 production:
  adapter: postgresql
- encoding: unicode
  database: de2sf3ksv430bm
  username: pqqtpvmwrnaivs
  password: Jds52pPL4gm2IKcFJMpbyXERyB
