@@ -5,18 +5,20 @@
 #   gem 'sqlite3'
 #
 development:
- adapter: postgresql
- encoding: unicode
- database: db_development
- pool: 5
- username: davidtoco
- password:
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
+  database: db/development.sqlite3
 
-test:
+production:
  adapter: postgresql
  encoding: unicode
- database: db_test
- pool: 5
- username: davidtoco
- password:
+ database: de2sf3ksv430bm
+ username: pqqtpvmwrnaivs
+ password: Jds52pPL4gm2IKcFJMpbyXERyB
+ host: ec2-54-83-202-64.compute-1.amazonaws.com
+ port: 5432
+
+
+
 
